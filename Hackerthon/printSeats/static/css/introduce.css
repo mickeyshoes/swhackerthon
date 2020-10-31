@@ -1,0 +1,29 @@
+/* 멤버 소개 */
+.member-card-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
+    width: 100%;
+    height: 300px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 5% 0;
+}
+
+.member-card>p {
+    margin: 0;
+}
+
+.member-card>img {
+    width: 50%;
+    border-radius: 50%;
+}

@@ -2,6 +2,37 @@
 {% load static %}
 {% block link %}{% static 'css/introduce.css' %}{% endblock %}
 {% block content %}
-    <p>테스트</p>
+    <ul class="member-card-list">
+        <li class="member-card">
+            <img src="{% static 'img/profile.png' %}" alt="member-profile" class="member-profile-img">
+            <label class="member-name">박병호</label>
+            <p class="member-role">프론트엔드</p>
+            <p>안녕하세요 박병호입니다.</p>
+        </li>
+        <li class="member-card">
+            <img src="{% static 'img/profile.png' %}" alt="member-profile" class="member-profile-img">
+            <label class="member-name">임성민</label>
+            <p class="member-role">프론트엔드</p>
+            <div class="description">
+                <p>안녕하세요 임성민입니다.</p>
+            </div>
+        </li>
+        <li class="member-card">
+            <img src="{% static 'img/profile.png' %}" alt="member-profile" class="member-profile-img">
+            <label class="member-name">이승준</label>
+            <p class="member-role">프론트엔드</p>
+            <div class="description">
+                <p>안녕하세요 이승준입니다.</p>
+            </div>
+        </li>
+        <li class="member-card">
+            <img src="{% static 'img/profile.png' %}" alt="member-profile" class="member-profile-img">
+            <label class="member-name">장혜린</label>
+            <p class="member-role">프론트엔드</p>
+            <div class="description">
+                <p>안녕하세요 장혜린입니다.</p>
+            </div>
+        </li>
+    </ul>
 {% endblock %}
 {% block js %}{% static 'js/introduce.js' %}{% endblock %}
