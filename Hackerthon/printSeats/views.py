@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def main(request):
     return render(request, 'index.html')
+
+def introduce(request):
+    return render(request, 'introduce.html')
