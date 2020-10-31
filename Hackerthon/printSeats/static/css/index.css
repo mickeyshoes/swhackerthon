@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
@@ -23,6 +30,7 @@ body {
     height: 7vh;
     width: 100%;
     background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 메뉴 */
@@ -39,10 +47,40 @@ body {
     color: #000;
 }
 
+/* 메뉴 효과 */
+.menues a:hover {
+    color: #ccc;
+    transition: color .2s ease-out;
+}
+
+.menues a:hover, .menues a {
+    transition: color .2s ease-out;
+}
+
+/* 본문 */
+.content {
+    height: 750px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* 좌석 스타일 */
+.seat-with-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seat-title {
+    font-size: 22px;
+}
+
 .seat-container {
     height: 250px;
-    width: 110%;
+    width: 275px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,16 +98,19 @@ body {
     margin: 0;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-}
-
-.seat:hover {
-    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .seat-row.reverse>.seat {
-    transform: rotate(180deg);
+    border-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .seat.pregnant {
     background: rgb(255, 128, 128);
+}
+
+.seat.occupied {
+    border: 2px solid #000;
 }
