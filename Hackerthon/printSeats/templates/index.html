@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block link %}{% static 'css/index.css' %}{% endblock %}
 {% block content %}
 <div class="seat-with-title" id="seat-with-title">
     <p><span class="seat-title">좌석현황</span></p>
@@ -20,3 +22,4 @@
     </div>
 </div>
 {% endblock %}
+{% block js %}{% static 'js/index.js' %}{% endblock %}

@@ -1,3 +1,7 @@
+.content {
+    height: 750px;
+}
+
 /* 멤버 소개 */
 .member-card-list {
     list-style-type: none;
