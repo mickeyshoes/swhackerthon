@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header, .header>img {
+    width: 100%;
+}
+
+/* 제목 */
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    background: #fff;
+}
+
+/* 메뉴 */
+.menues {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+}
+
+/* a 태그 초기화 */
+.menues a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 좌석 스타일 */
+.seat-container {
+    height: 250px;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    margin: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.seat:hover {
+    cursor: pointer;
+}
+
+.seat-row.reverse>.seat {
+    transform: rotate(180deg);
+}
+
+.seat.pregnant {
+    background: rgb(255, 128, 128);
+}
