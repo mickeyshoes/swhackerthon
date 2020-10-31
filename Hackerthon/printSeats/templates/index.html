@@ -6,7 +6,7 @@
     <p><span class="seat-title">좌석현황</span></p>
     <div class="seat-container">
         <div class="seat-row reverse">
-            <div class="seat pregnant occupied"></div>
+            <div class="seat pregnant" id="pregnant1"></div>
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -17,9 +17,30 @@
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
-            <div class="seat pregnant"></div>
+            <div class="seat pregnant" id="pregnant2"></div>
         </div>
     </div>
 </div>
 {% endblock %}
 {% block js %}{% static 'js/index.js' %}{% endblock %}
+{% block added_js %}
+<script>
+    function addClass(element, _class) {
+        element.classList.add(_class);
+    }
+
+    const OCCUPIED_CLASS = 'occupied';
+    const pregnant1 = document.getElementById('pregnant1'),
+    pregnant2 = document.getElementById('pregnant2');
+    const OCCUPIED_1 = {{ num1 }},
+    OCCUPIED_2 = {{ num2 }};
+    console.log(OCCUPIED_1, OCCUPIED_2);
+    if (OCCUPIED_1) {
+        // 자리 참
+        addClass(pregnant1, OCCUPIED_CLASS);
+    }
+    if (OCCUPIED_2) {
+        addClass(pregnant2, OCCUPIED_CLASS);
+    }
+</script>
+{% endblock %}
