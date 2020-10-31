@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
     <div class="container">
@@ -17,7 +18,7 @@
                         </a>
                     </span>
                     <span class="menu">
-                        <a href="#">
+                        <a href="#" id="seat-btn">
                         좌석
                         </a>
                     </span>
@@ -41,20 +42,23 @@
             <img src="static/img/title.gif" alt="title">
         </div>
         <div class="content">
-            <div class="seat-container">
-                <div class="seat-row reverse">
-                    <div class="seat pregnant"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat pregnant"></div>
-                </div>
-                <div class="seat-row">
-                    <div class="seat pregnant"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat pregnant"></div>
+            <div class="seat-with-title" id="seat-with-title">
+                <p><span class="seat-title">좌석현황</span></p>
+                <div class="seat-container">
+                    <div class="seat-row reverse">
+                        <div class="seat pregnant occupied"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat pregnant"></div>
+                    </div>
+                    <div class="seat-row">
+                        <div class="seat pregnant"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat pregnant"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,6 +66,6 @@
 
         </div>
     </div>
-    <script src="static/js/index.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
