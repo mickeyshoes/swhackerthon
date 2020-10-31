@@ -8,3 +8,9 @@ def main(request):
 
 def introduce(request):
     return render(request, 'introduce.html')
+
+def policy(request):
+    return render(request, 'policy.html')
+
+def service(request):
+    return render(request, 'service.html')
