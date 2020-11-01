@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% load static %}
 {% block link %}{% static 'css/policy.css' %}{% endblock %}
 {% block content %}
+<div class="policy-header-img-container">
+    <img src="{% static 'img/policy_header.png' %}" alt="policy" class="policy-header-img">
+</div>
     <div class="policy-card-with-title">
-        <p class="policy-title">임산부 지원정책</p>
+        <!-- <p class="policy-title">임산부 지원정책</p> -->
         <div class="policy-card">
             <div class="policy-card-info">
                 <h2>< 맘편한 카드 ></h2>
@@ -24,58 +27,64 @@
             <div class="policy-card-bottom-right front"></div>
         </div>
     </div>
-    <div class="policy-card">
-        <div class="policy-card-info">
-            <h2>< 고운맘 카드 ></h2>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원대상</span>
-                </p>
-                <p>모든 임산부 대상</p>
-            </div>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원내용</span>
-                </p>
-                <p>임신/출산비 지원 50만원<br>다태아 임신의 경우 +20만원</p>
-            </div>
-        </div>
-    </div>
-    <div class="policy-card">
-        <div class="policy-card-info">
-            <h2>< 철분제/엽산제 지원 ></h2>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원대상</span>
-                </p>
-                <p>보건소에 등록된 임산부 대상</p>
-            </div>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원내용</span>
-                </p>
-                <p>엽산제 : 임신일 ~ 3개월까지<br>철분제 : 임신 16주 ~ 출산전까지</p>
+    <div class="policy-card-with-title">
+        <div class="policy-card">
+            <div class="policy-card-info">
+                <h2>< 고운맘 카드 ></h2>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원대상</span>
+                    </p>
+                    <p>모든 임산부 대상</p>
+                </div>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원내용</span>
+                    </p>
+                    <p>임신/출산비 지원 50만원<br>다태아 임신의 경우 +20만원</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="policy-card">
-        <div class="policy-card-info">
-            <h2>< 체외/인공 수정 시술비 지원 ></h2>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원대상</span>
-                </p>
-                <p>월평균 소득 150% 이하 난임부부 대상</p>
-            </div>
-            <div class="policy-card-row">
-                <p class="high-light">
-                    <span class="policy-sub-title">지원내용</span>
-                </p>
-                <p>체외수정 시술비 6회 / 인공수정 시술비 3회</p>
+    <div class="policy-card-with-title">
+        <div class="policy-card">
+            <div class="policy-card-info">
+                <h2>< 철분제/엽산제 지원 ></h2>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원대상</span>
+                    </p>
+                    <p>보건소에 등록된 임산부 대상</p>
+                </div>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원내용</span>
+                    </p>
+                    <p>엽산제 : 임신일 ~ 3개월까지<br>철분제 : 임신 16주 ~ 출산전까지</p>
+                </div>
             </div>
         </div>
-        <div class="policy-card-bottom-right back"></div>
-        <div class="policy-card-bottom-right front"></div>
+    </div>
+    <div class="policy-card-with-title">
+        <div class="policy-card">
+            <div class="policy-card-info">
+                <h2>< 체외/인공 수정 시술비 지원 ></h2>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원대상</span>
+                    </p>
+                    <p>월평균 소득 150% 이하 난임부부 대상</p>
+                </div>
+                <div class="policy-card-row">
+                    <p class="high-light">
+                        <span class="policy-sub-title">지원내용</span>
+                    </p>
+                    <p>체외수정 시술비 6회 / 인공수정 시술비 3회</p>
+                </div>
+            </div>
+            <div class="policy-card-bottom-right back"></div>
+            <div class="policy-card-bottom-right front"></div>
+        </div>
     </div>
 {% endblock %}
 {% block js %}{% static 'js/policy.js' %}{% endblock %}

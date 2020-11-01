@@ -9,4 +9,5 @@ urlpatterns = [
     path('policy/', views.policy, name="policy"),
     path('service/', views.service, name="service"),
     path('get_seat/', views.getSeatInfo, name="get_seat"),
+    path('seat/', views.seat, name="seat"),
 ]

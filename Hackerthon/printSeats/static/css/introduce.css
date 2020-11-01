@@ -1,5 +1,5 @@
 .content {
-    height: 750px;
+    padding: 10vh;
 }
 
 /* 멤버 소개 */
@@ -30,4 +30,8 @@
 .member-card>img {
     width: 50%;
     border-radius: 50%;
+}
+
+.member-role {
+    color: #777;
 }

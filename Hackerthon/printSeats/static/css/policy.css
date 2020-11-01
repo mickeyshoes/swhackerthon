@@ -1,6 +1,8 @@
 .content {
-    height: 500vh;
-    padding-top: 20vh;
+    padding: 10vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .high-light {
@@ -15,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    height: 500px;
 }
 
 .policy-title {
@@ -50,4 +52,14 @@
 
 .policy-sub-title {
 
+}
+
+.policy-header-img {
+    width: 50vw;
+}
+
+.policy-header-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

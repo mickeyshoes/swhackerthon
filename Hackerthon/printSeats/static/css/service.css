@@ -1,0 +1,31 @@
+.content {
+    padding: 10vh;
+}
+
+.service-header-img {
+    width: 50vw;
+}
+
+.service-header-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.high-light {
+    background: #666;
+    color: #fff;
+    width: 150px;
+}
+
+/* 혜택 소개 카드 */
+
+.service-card-img-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.service-card-img {
+    width: 50vw;
+}

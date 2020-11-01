@@ -1,20 +1,26 @@
 {% extends 'home.html' %}
 {% load static %}
-{% block link %}{% static 'css/home_copy.css' %}{% endblock %}
-{% block link2 %}{% static 'css/index.css' %}{% endblock %}
+{% block link %}{% static 'css/seat.css' %}{% endblock %}
 
 {% block content %}
 
-<div class="sphere-container">
-    <div class="sphere">
-        <img class="image" src="{% static 'img/home.png' %}">
-    </div>
-    
-    <div class="cy">
-        <div class="cy__cy top"></div>
-        <div class="cy__lec mid"></div>
-        <div class="cy__cy btm"></div>
-        <div class="sphare-shadow"></div>
+<div class="seat-with-title" id="seat-with-title">
+    <p><span class="seat-title">좌석현황</span></p>
+    <div class="seat-container">
+        <div class="seat-row reverse">
+            <div class="seat pregnant" id="pregnant1"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat pregnant"></div>
+        </div>
+        <div class="seat-row">
+            <div class="seat pregnant"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat pregnant" id="pregnant2"></div>
+        </div>
     </div>
 </div>
 
