@@ -29,18 +29,40 @@
         element.classList.add(_class);
     }
 
+    function resetClass(element) {
+        element.classList.remove('occupied');
+    }
+
     const OCCUPIED_CLASS = 'occupied';
     const pregnant1 = document.getElementById('pregnant1'),
-    pregnant2 = document.getElementById('pregnant2');
-    const OCCUPIED_1 = {{ num1 }},
-    OCCUPIED_2 = {{ num2 }};
-    console.log(OCCUPIED_1, OCCUPIED_2);
-    if (OCCUPIED_1) {
-        // 자리 참
-        addClass(pregnant1, OCCUPIED_CLASS);
+        pregnant2 = document.getElementById('pregnant2');
+
+    function updateOccupied(occupied1, occupied2) {
+        const OCCUPIED_1 = occupied1;
+        OCCUPIED_2 = occupied2;
+        resetClass(pregnant1);
+        resetClass(pregnant2);
+        if (OCCUPIED_1) {
+            // 자리 참
+            addClass(pregnant1, OCCUPIED_CLASS);
+        }
+        if (OCCUPIED_2) {
+            addClass(pregnant2, OCCUPIED_CLASS);
+        }
     }
-    if (OCCUPIED_2) {
-        addClass(pregnant2, OCCUPIED_CLASS);
+
+    const url = `{% url 'print_seat:get_seat' %}`;
+    function updateSeat() {
+        fetch(url).then(response => response.json())
+            .then(json => {
+                const num1 = json['num1'];
+                const num2 = json['num2'];
+                updateOccupied(num1, num2);
+            });
     }
+
+    setInterval(updateSeat, 3000);
+
+
 </script>
 {% endblock %}

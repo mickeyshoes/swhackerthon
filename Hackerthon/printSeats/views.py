@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+import asyncio
 
 # Create your views here.
 
-@csrf_exempt
-def main(request):
-
+async def getAsyncDatas():
     import serial
 
     arduino = serial.Serial('COM4', 9600, timeout = .1) 
@@ -43,6 +42,20 @@ def main(request):
     elif datas ==['']:
         pass
 
+
+    return send_data_list
+
+def getSeatInfo(request):
+    send_data_list = asyncio.run(getAsyncDatas())
+    import json
+    data = json.dumps(send_data_list)
+    print(type(data))
+    print('aaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+    return HttpResponse(data)
+
+@csrf_exempt
+def main(request):
+    send_data_list = asyncio.run(getAsyncDatas())
     return render(request, 'index.html', send_data_list)
 
 def introduce(request):
