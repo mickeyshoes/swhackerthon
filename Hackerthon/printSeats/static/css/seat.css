@@ -1,6 +1,6 @@
-/* .content {
-    height: 750px;
-} */
+.content {
+    padding: 10vh;
+}
 
 /* 좌석 스타일 */
 .seat-with-title {

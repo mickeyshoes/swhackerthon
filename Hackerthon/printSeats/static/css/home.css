@@ -1,57 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#e18c7e 54%, #b27175 54% 54.2%, #ffffff 54.2%);
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+.header {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(#e18c7e 54%, #b27175 54% 54.2%, #ffffff 54.2%); */
+  background: #e18c7e;
+}
+
+.header a{
+  text-decoration: none;
+  color:white;
+  margin: 0 15px;
+}
+
 .box {
   position: relative;
 }
 
-img{
+/* img{
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25%;
-}
+} */
 
-.flex{
+
+/* 메뉴 */
+.menues {
+  padding: 15px 0;
   position: fixed;
-  top: 3.5%;
-}
-
-a{
-  text-decoration: none;
-  color:white;
-  margin-left: 15px;
-}
-
-.footer{
-  position: fixed;
-  top: 90%;
-  background-color: white;
+  top: 0;
   width: 100%;
-  height: 10%;
-  color: black;
+  background: #e18c7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer>a {
-  color: black;
+.menu>a:hover {
+  color: rgb(235, 235, 235);
+  transition: color .2s ease-out;
 }
 
 .black{
-  position: fixed;
-  top: 89.8%;
   background-color: rgb(211, 210, 210);
   width: 100%;
   height: 15%;
+}
+
+.footer-container {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.footer-container a {
+  color: black;
+  margin: 0;
+}
+
+.footer-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  transform: translateY(-5px);
+  transition: transform .1s ease-in;
+}
+
+.footer{
+  border-top: 1px solid #ccc;
+  background-color: white;
+  width: 100%;
+  height: 5vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 }

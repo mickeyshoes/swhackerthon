@@ -49,14 +49,14 @@ def getSeatInfo(request):
     send_data_list = asyncio.run(getAsyncDatas())
     import json
     data = json.dumps(send_data_list)
-    print(type(data))
-    print('aaaaaaaaaaaaaaaaaaaaaaaaaaaa')
     return HttpResponse(data)
 
 @csrf_exempt
 def main(request):
-    send_data_list = asyncio.run(getAsyncDatas())
-    return render(request, 'index.html', send_data_list)
+    # send_data_list = asyncio.run(getAsyncDatas())
+    send_data_list = {}
+    # return render(request, 'index.html', send_data_list)
+    return render(request, 'home_copy.html', send_data_list)
 
 def introduce(request):
     return render(request, 'introduce.html')
@@ -66,3 +66,6 @@ def policy(request):
 
 def service(request):
     return render(request, 'service.html')
+
+def seat(request):
+    return render(request, 'seat.html')

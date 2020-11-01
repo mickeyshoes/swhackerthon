@@ -9,54 +9,65 @@
     <title>Hackathon</title>
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% block link %}{% endblock %}">
+    <link rel="stylesheet" href="{% block link2 %}{% endblock %}">
 
 </head>
 
 <body>
-    <div class="flex">
-        <span class="logo">
-            <a href="{% url 'print_seat:main' %}">
-                로고
-            </a>
-        </span>
-        <span class="menu">
-            <a href="#" id="seat-btn">
-                좌석
-            </a>
-        </span>
-        <span class="menu">
-            <a href="{% url 'print_seat:policy' %}">
-                정책
-            </a>
-        </span>
-        <span class="menu">
-            <a href="{% url 'print_seat:service' %}">
-                서비스
-            </a>
-        </span>
-        <span class="menu">
-            <a href="{% url 'print_seat:introduce' %}">
-                소개
-            </a>
-        </span>
+    <div class="header">
+        <div class="menues">
+            <span class="menu">
+                <a href="{% url 'print_seat:main' %}">
+                    홈
+                </a>
+            </span>
+            <span class="menu">
+                <a href="{% url 'print_seat:seat' %}" id="seat-btn">
+                    좌석
+                </a>
+            </span>
+            <span class="menu">
+                <a href="{% url 'print_seat:policy' %}">
+                    정책
+                </a>
+            </span>
+            <span class="menu">
+                <a href="{% url 'print_seat:service' %}">
+                    혜택
+                </a>
+            </span>
+            <span class="menu">
+                <a href="{% url 'print_seat:introduce' %}">
+                    소개
+                </a>
+            </span>
+        </div>
+        <img src="{% static 'img/home.png' %}" alt="home">
     </div>
 
     <div class="content">
         {% block content %}{% endblock %}
     </div>
-    <div class="black">
-    <div class="footer" id="foo">
 
-        <a href="#">이승준</a>
-        <a href="#">임성민</a>
-        <br>
-        <a href="https://github.com/rhehd721/">박병호 https://github.com/rhehd721</a>
-        <a href="#">장혜린</a>
-
-    </div>
+    <div class="footer">
+        <ul class="footer-container">
+            <li>
+                <a href="https://github.com/g0709-19">이승준</a>
+            </li>
+            <li>
+                <a href="https://github.com/mickeyshoes">임성민</a>
+            </li>
+            <li>
+                <a href="https://github.com/rhehd721/">박병호</a>
+            </li>
+            <li>
+                <a href="https://github.com/hyerin1105">장혜린</a>
+            </li>
+        </ul>
     </div>
     <script src="{% static 'js/base.js' %}"></script>
     <script src="{% block js %}{% endblock %}"></script>
+    <script src="{% block js2 %}{% endblock %}"></script>
     {% block added_js %}{% endblock %}
 </body>
 

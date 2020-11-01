@@ -1,2 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% load static %}
+{% block link %}{% static 'css/service.css' %}{% endblock %}
+{% block content %}
+<div class="service-header-img-container">
+    <img src="{% static 'img/service_header.png' %}" alt="service" class="service-header-img">
+</div>
+
+<div class="service-card-img-container">
+    <img src="{% static 'img/service_card.png' %}" alt="service_card" class="service-card-img">
+</div>
+{% endblock %}
