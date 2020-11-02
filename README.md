@@ -12,7 +12,8 @@
 <img src="readme-img/arduino1.png">
 
 ## 회로 구현
-[![회로구현](http://img.youtube.com/vi/Tc-3orX-aVc/0.jpg)](https://youtu.be/Tc-3orX-aVc?t=0s)
+[![회로구현](http://img.youtube.com/vi/Tc-3orX-aVc/0.jpg)](https://youtu.be/Tc-3orX-aVc?t=0s)  
+**(이미지를 클릭하시면 영상이 나옵니다)**
 
 ## 웹 구현
 <img src="readme-img/web1.png">
@@ -21,4 +22,5 @@
 <img src="readme-img/web4.png">
 <img src="readme-img/web5.png">
 
-[![회로구현](http://img.youtube.com/vi/_Zo-s68Gja4/0.jpg)](https://youtu.be/_Zo-s68Gja4?t=0s)
+[![회로구현](http://img.youtube.com/vi/_Zo-s68Gja4/0.jpg)](https://youtu.be/_Zo-s68Gja4?t=0s)  
+**(이미지를 클릭하시면 영상이 나옵니다)**
