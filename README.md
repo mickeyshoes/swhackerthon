@@ -12,7 +12,7 @@
 <img src="readme-img/arduino1.png">
 
 ## 회로 구현
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_Zo-s68Gja4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![회로구현](http://img.youtube.com/vi/Tc-3orX-aVc/0.jpg)](https://youtu.be/Tc-3orX-aVc?t=0s)
 
 ## 웹 구현
 <img src="readme-img/web1.png">
@@ -21,4 +21,4 @@
 <img src="readme-img/web4.png">
 <img src="readme-img/web5.png">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Tc-3orX-aVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![회로구현](http://img.youtube.com/vi/_Zo-s68Gja4/0.jpg)](https://youtu.be/_Zo-s68Gja4?t=0s)
